@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+body{
+    background: #222;
+}
+
+.card{
+     border: 3px solid white;
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: white;
+    margin: 100px auto ;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.search{
+    display: flex; /*By using display flex in parent element,child elements automatically align like column or row 
+                    with auto width and auto height.*/
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;/*Flex items are evenly distributed in the line.*/
+
+}
+
+.search input{/*this is used to target input tag inside div whose id is search*/
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;/*The flex property sets the flexible length on flexible items.*/
+    /*Flex items are the direct children of a flex container. A flex container (the large yellow area in the image) is an HTML element.
+     whose display property's value is flex or inline-flex*/
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+
+    width: 18px;
+}
+
+.wether-icon{
+
+    width: 170px;
+    margin-top: 30px;
+}
+
+.wether h1{
+     
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.wether h2{
+     
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.col{
+    display: flex;
+    align-items: centre;
+    align-items: left;
+}
+
+.col img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity , .wind{
+    font-size: 30px;
+    margin-top: -6px;
+}
+
+.wether{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    display: none;
+}
